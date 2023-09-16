@@ -1,7 +1,8 @@
+import { PropTypes } from 'prop-types';
 import { FiDollarSign } from 'react-icons/fi';
 import { BsBook } from 'react-icons/bs';
 const Main = ({course,handleSelect}) => {
-const {id,cover,title,description,price,credit} = course;
+const {cover,title,description,price,credit} = course;
           return (
           <div className=" rounded-lg border-2 border-solid shadow-lg p-3">
           <div>
@@ -17,5 +18,17 @@ const {id,cover,title,description,price,credit} = course;
           </div>        
           );
 };
+
+Main.propTypes = {
+          course: PropTypes.shape({
+            id: PropTypes.number.isRequired,
+            cover: PropTypes.string.isRequired,
+            title: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            price: PropTypes.number.isRequired,
+            credit: PropTypes.number.isRequired,
+          }).isRequired,
+          handleSelect: PropTypes.func.isRequired,
+        };
 
 export default Main;

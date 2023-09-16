@@ -1,3 +1,4 @@
+import { PropTypes } from 'prop-types';
 const Purches = ({select,credit,price,timeremain}) => {
           return (
           <div className="w-1/4 rounded-lg border-2 border-solid shadow-lg p-3 h-80 ">
@@ -20,5 +21,12 @@ const Purches = ({select,credit,price,timeremain}) => {
           </div>
           );
 };
+
+Purches.propTypes = {
+          select: PropTypes.array.isRequired,
+          credit: PropTypes.number.isRequired,
+          price: PropTypes.number.isRequired,
+          timeremain: PropTypes.number.isRequired,
+        };
 
 export default Purches;
