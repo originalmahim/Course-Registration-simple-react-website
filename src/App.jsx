@@ -1,11 +1,12 @@
 
 import './App.css'
+import Head from './Components/Head/Head'
 
 function App() {
 
   return (
     <>
-      <h1>Vite + React</h1>
+    <Head></Head>
     </>
   )
 }
