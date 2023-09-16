@@ -15,7 +15,8 @@ function App() {
 
 const [select,setSelect] = useState([]);
 const [credit,setCredit] = useState(0);
-  const handleSelect = (item,time) =>{
+const [price,setPrice] = useState(0)
+  const handleSelect = (item,time,money) =>{
   
     const isExist = select.find((things) => things === item)
   if (isExist) {
@@ -29,6 +30,8 @@ const [credit,setCredit] = useState(0);
     setSelect(newtitles);
     const newcredit = credit + time;
     setCredit(newcredit);
+    const totalprice = price + money;
+    setPrice(totalprice)
     
     }
   return (
@@ -40,7 +43,7 @@ const [credit,setCredit] = useState(0);
         courses.map(course => <Main key={course.id} handleSelect = {handleSelect} course = {course} ></Main>)
       }
       </div>
-      <Purches credit = {credit} select ={select}></Purches>
+      <Purches credit = {credit} select ={select} price ={price}></Purches>
       </div>
     </>
   )
