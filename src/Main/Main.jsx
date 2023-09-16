@@ -13,7 +13,7 @@ const {id,cover,title,description,price,credit} = course;
           <p className="font-medium text-xl flex items-center justify-center"><FiDollarSign></FiDollarSign> Price: {price}</p>
           <p className='flex items-center gap-1 text-xl font-medium'><BsBook></BsBook> Credit : {credit}hr</p>
           </div>
-          
+          <button onClick={() => handleSelect(title,credit,price)} className="border-2 border-solid border-blue-500 rounded-lg bg-blue-500 text-white w-full">Select</button>
           </div>        
           );
 };
