@@ -20,6 +20,7 @@ const [timeremain,SetTimeremain] = useState(20);
   const handleSelect = (item,time,money) =>{
   
     const isExist = select.find((things) => things === item)
+    const totalprice = price + money;
   if (isExist) {
     return Swal.fire({
       icon: 'error',
@@ -27,16 +28,23 @@ const [timeremain,SetTimeremain] = useState(20);
       text: 'You can not add a course Multiple times',
     })
     }
+    
+    const newtime = timeremain - time;
+    if (newtime < 0) {
+      return Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You can not add More Courses. Credit Hour is Limited',
+      })
+    }
+    else{
     const newtitles = [...select,item]
     setSelect(newtitles);
     const newcredit = credit + time;
     setCredit(newcredit);
-    const totalprice = price + money;
-    setPrice(totalprice)
-    
-    const newtime = timeremain - time;
     SetTimeremain(newtime)
-    
+    setPrice(totalprice);
+    }
     }
   return (
     <>
