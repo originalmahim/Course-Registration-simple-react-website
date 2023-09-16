@@ -14,11 +14,10 @@ function App() {
 },[])
 
 const [select,setSelect] = useState([]);
-  const handleSelect = (item) =>{
-
-    
-
-  const isExist = select.find((things) => things === item)
+const [credit,setCredit] = useState(0);
+  const handleSelect = (item,time) =>{
+  
+    const isExist = select.find((things) => things === item)
   if (isExist) {
     return Swal.fire({
       icon: 'error',
@@ -28,19 +27,20 @@ const [select,setSelect] = useState([]);
     }
     const newtitles = [...select,item]
     setSelect(newtitles);
+    const newcredit = credit + time;
+    setCredit(newcredit);
     
     }
   return (
     <>
     <Head></Head>
     <div className="my-5 flex justify-between gap-3">
-    <div className='w-3/4 grid grid-cols-3 gap-5
-'>
+    <div className='w-3/4 grid grid-cols-3 gap-5'>
       {
         courses.map(course => <Main key={course.id} handleSelect = {handleSelect} course = {course} ></Main>)
       }
       </div>
-      <Purches select ={select}></Purches>
+      <Purches credit = {credit} select ={select}></Purches>
       </div>
     </>
   )

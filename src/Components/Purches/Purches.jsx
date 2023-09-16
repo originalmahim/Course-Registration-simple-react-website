@@ -1,4 +1,4 @@
-const Purches = ({select}) => {
+const Purches = ({select,credit}) => {
           return (
           <div className="w-1/4 rounded-lg border-2 border-solid shadow-lg p-3 h-80 ">
            <hr />
@@ -11,7 +11,9 @@ const Purches = ({select}) => {
           </ol>
 
           </div>
-          <hr />        
+          <hr />
+
+          <h1 className="text-xl font-bold">Total Credit Hour : {credit}</h1>         
           </div>
           );
 };
