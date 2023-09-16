@@ -1,0 +1,74 @@
+[
+          {
+            "id": 1,
+            "cover": "https://i.ibb.co/GVMYhsH/image1.png",
+            "title": "Introduction to C Programming",
+            "description": "A comprehensive guide to C programming. Learn the basics of C, including variables, data types, and control structures. This course is suitable for beginners and provides a solid foundation for learning.",
+            "price": 10000,
+            "credit": 5
+          },
+          {
+            "id": 2,
+            "cover": "https://i.ibb.co/Y8v7m6z/image2.jpg",
+            "title": "Introduction to Algorithms",
+            "description": "Explore the world of algorithms with this introductory course. Topics include sorting, searching, and algorithm analysis. Suitable for beginners and those wanting to deepen their algorithmic knowledge.",
+            "price": 19000,
+            "credit": 7
+          },
+          {
+            "id": 3,
+            "cover": "https://i.ibb.co/b6x2S6H/image3.png",
+            "title": "Introduction to C++ for DSA",
+            "description": "Learn C++ programming with a focus on Data Structures and Algorithms (DSA). Cover key concepts in C++, such as classes and objects. Suitable for programming enthusiasts.",
+            "price": 25000,
+            "credit": 4
+          },
+          {
+            "id": 4,
+            "cover": "https://i.ibb.co/Zcm8zNN/image4.jpg",
+            "title": "Basic Data Structures",
+            "description": "Discover essential data structures used in computer science. Topics include arrays, linked lists, stacks, and queues. Suitable for beginners and aspiring to be a programmers.",
+            "price": 15000,
+            "credit": 6
+          },
+          {
+            "id": 5,
+            "cover": "https://i.ibb.co/FbLLvxW/image5.png",
+            "title": "Introduction to OOP Python",
+            "description": "Master Object-Oriented Programming (OOP) in Python. Learn about classes, inheritance, and polymorphism. Suitable for Python developers looking to advance their skills.",
+            "price": 35000,
+            "credit": 8
+          },
+          {
+            "id": 6,
+            "cover": "https://i.ibb.co/frJyzXg/image6.jpg",
+            "title": "Software Engineering",
+            "description": "Comprehensive coverage of the software development lifecycle. Topics include requirements, design, coding, testing, and project management. Suitable for software engineering enthusiasts.",
+            "price": 20000,
+            "credit": 3
+          },
+          {
+            "id": 7,
+            "cover": "https://i.ibb.co/Fnc6c0N/image8.png",
+            "title": "Complete Web Development",
+            "description": "Become a full-stack web developer with hands-on projects. Learn HTML, CSS, JavaScript, and backend development. Suitable for beginners and aspiring web developers.",
+            "price": 28000,
+            "credit": 4
+          },
+          {
+            "id": 8,
+            "cover": "https://i.ibb.co/JRtCkVV/image7.jpg",
+            "title": "Database (MySQL)",
+            "description": "In-depth course on database design, SQL, and MySQL administration. Learn to create and manage databases, optimize queries, and ensure data integrity. Suitable for database enthusiasts.",
+            "price": 22000,
+            "credit": 5
+          },
+          {
+            "id": 9,
+            "cover": "https://i.ibb.co/rkLbFmR/image9.webp",
+            "title": "Programming Problem Solving",
+            "description": "Enhance your coding skills with practical problem-solving exercises. Solve coding challenges and improve your problem-solving abilities. Suitable for aspiring programmers.",
+            "price": 31000,
+            "credit": 7
+          }
+        ]
